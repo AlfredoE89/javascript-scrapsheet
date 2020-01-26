@@ -2,16 +2,19 @@
 <html>
   <body>
     <h2>Javavscript String Methods!</h2>
-      <p>lastIndexOf() Method!</p>
-    
+    <p>Replace "MicroSoft" with "W3Schools" in the paragraph below:</p>
 
-    <p id="demo"></p>
+    <button onclick="myFunction()">Try It!</button>
+
+    <p id="demo">Please visit Microsoft</p>
 
     <script>
-    var str = "Wash hands before using hands in work area!";
-    var pos = str.search("area");
-    document.getElementById("demo").innerHTML = pos;
-    </script>
+      function myFunction() {
+        var str = document.getElementById("demo").innerHTML;
+        var txt = str.replace("Microsoft", "America");
+
+        document.getElementById("demo").innerHTML = txt;
+      }
     </script>
   </body>
 </html>
