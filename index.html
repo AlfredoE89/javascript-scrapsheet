@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h1>My First Web Page!</h1>
-    <p>My First Paragraph</p>
+    <h2>Javavscript Objects!</h2>
+    <p>Below is the Javavscript</p>
 
-    <p id="val"></p>
+    <p id="1N"></p>
 
     <script>
-      function eachVal(n1, n2) {
-        return n1 + n2;
-      }
-      document.getElementById("val").innerHTML = eachVal(5, 100);
+      var person = {
+        firstName: "Eddie",
+        lastName: "Jobo",
+        id: 5566,
+        fullName: function() {
+          return this.firstName + " " + this.lastName;
+        }
+      };
+
+      document.getElementById("1N").innerHTML = person.fullName();
     </script>
   </body>
 </html>
