@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h2>Javavscript String Methods!</h2>
-    <p>Replace "MicroSoft" with "W3Schools" in the paragraph below:</p>
+    <h2>Javascript String Methods</h2>
 
-    <button onclick="myFunction()">Try It!</button>
+    <p>The concat() method joins two or more strings:</p>
 
-    <p id="demo">Please visit Microsoft</p>
+    <p id="demo"></p>
 
     <script>
-      function myFunction() {
-        var str = document.getElementById("demo").innerHTML;
-        var txt = str.replace("Microsoft", "America");
-
-        document.getElementById("demo").innerHTML = txt;
-      }
+      var text1 = "Hello";
+      var text2 = "World";
+      var text3 = text1.concat("", text2);
+      document.getElementById("demo").innerHTML = text3;
     </script>
   </body>
 </html>
