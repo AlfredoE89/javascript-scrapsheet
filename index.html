@@ -3,7 +3,8 @@
   <body>
     <h2>Javascript Array's</h2>
 
-    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
 
     <script>
       var fruits = [
@@ -16,6 +17,9 @@
         "Blueberry",
         "Rasberry"
       ];
+      document.getElementById("demo1").innerHTML = fruits;
+      fruits[2] = "Kiwi";
+      document.getElementById("demo2").innerHTML = fruits;
     </script>
   </body>
 </html>
