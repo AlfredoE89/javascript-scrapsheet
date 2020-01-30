@@ -6,26 +6,11 @@
     <p id="demo"></p>
 
     <script>
-      var numbers = [
-        10,
-        20,
-        30,
-        40,
-        50,
-        60,
-        70,
-        80,
-        90,
-        100,
-        110,
-        120,
-        130,
-        140,
-        150
-      ];
-      var allOver18 = numbers.every(myFunction);
+      var numbers = [4, 9, 16, 25, 29];
+      var first = numbers.findIndex(myFunction);
 
-      document.getElementById("demo").innerHTML = "All over 18 is " + allOver18;
+      document.getElementById("demo").innerHTML =
+        "First number over 18 has index " + first;
 
       function myFunction(value, index, array) {
         return value > 18;
