@@ -3,41 +3,32 @@
   <body>
     <h2>Javascript Array Sort!</h2>
 
-    <button onclick="myFunction()">Press to sort</button>
-
     <p id="demo"></p>
 
     <script>
-      var cars = [
-        { type: "Volo", year: 2016 },
-        { type: "Ford", year: 2018 },
-        { type: "BMW", year: 1995 },
-        { type: "Toyota", year: 2005 },
-        { type: "Chevy", year: 2000 }
+      var numbers = [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100,
+        110,
+        120,
+        130,
+        140,
+        150
       ];
+      var allOver18 = numbers.every(myFunction);
 
-      displayCars();
+      document.getElementById("demo").innerHTML = "All over 18 is " + allOver18;
 
-      function myFunction() {
-        cars.sort(function(a, b) {
-          return a.year - b.year;
-        });
-        displayCars();
-      }
-
-      function displayCars() {
-        document.getElementById("demo").innerHTML =
-          cars[0].type +
-          " " +
-          cars[0].year +
-          "<br>" +
-          cars[1].type +
-          " " +
-          cars[1].year +
-          "<br>" +
-          cars[2].type +
-          " " +
-          cars[2].year;
+      function myFunction(value, index, array) {
+        return value > 18;
       }
     </script>
   </body>
