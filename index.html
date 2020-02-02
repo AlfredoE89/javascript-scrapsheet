@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h1>Boolean Method</h1>
-
-    <p>Input your age below in the box.</p>
-
-    <input id="age" value="18" />
-    <button onclick="myFunction()">Send</button>
-    <div style="margin-top: 30px"></div>
+    <h1>Javascript Conditions if/else/else if/switch</h1>
 
     <p id="demo"></p>
 
     <script>
-      function myfunction() {
-        var age, voteable;
-
-        age = document.getElementById("age").value;
-        votable = age < 18 ? "Too young" : "Old Enough";
-        document.getElementById("demo").innerHTML = voteable + " to vote.";
+      if (Math.random() < 0.5) {
+        text =
+          "<a href='http://localhost/AlfredoE89.github/'>Random Web Choice!</a>";
+      } else {
+        text =
+          "<a href='http://localhost/AlfredoE89.github.io/'>Random Web Choice!</a>";
       }
+      document.getElementById("demo").innerHTML = text;
     </script>
   </body>
 </html>
