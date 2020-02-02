@@ -6,12 +6,18 @@
     <p id="demo"></p>
 
     <script>
-      if (Math.random() < 0.5) {
-        text =
-          "<a href='http://localhost/AlfredoE89.github/'>Random Web Choice!</a>";
-      } else {
-        text =
-          "<a href='http://localhost/AlfredoE89.github.io/'>Random Web Choice!</a>";
+      var text;
+      switch (new Date().getDay()) {
+        case 4:
+        case 5:
+          text = "Soon it is Weekend";
+          break;
+        case 0:
+        case 6:
+          text = "It is Weekend";
+          break;
+        default:
+          text = "Looking forward to the Weekend";
       }
       document.getElementById("demo").innerHTML = text;
     </script>
