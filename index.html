@@ -1,25 +1,17 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h1>Javascript Conditions if/else/else if/switch</h1>
+    <h1>Javascript For Loop!</h1>
 
     <p id="demo"></p>
 
     <script>
-      var text;
-      switch (new Date().getDay()) {
-        case 4:
-        case 5:
-          text = "Soon it is Weekend";
-          break;
-        case 0:
-        case 6:
-          text = "It is Weekend";
-          break;
-        default:
-          text = "Looking forward to the Weekend";
+      var txt = "Javascript";
+      var x;
+
+      for (x of txt) {
+        document.write(x + "<br>");
       }
-      document.getElementById("demo").innerHTML = text;
     </script>
   </body>
 </html>
