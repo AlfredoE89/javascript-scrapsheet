@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h2>Javascript New Date()</h2>
+    <h1>Boolean Method</h1>
 
-    <button
-      onclick="document.getElementById('demo').innerHTML = getRndInteger(0,100)"
-    >
-      Click Me!
-    </button>
+    <p>Input your age below in the box.</p>
+
+    <input id="age" value="18" />
+    <button onclick="myFunction()">Send</button>
+    <div style="margin-top: 30px"></div>
 
     <p id="demo"></p>
 
     <script>
-      function getRndInteger(min, max) {
-        return Math.floor(Math.random() * (max - min)) + min;
+      function myfunction() {
+        var age, voteable;
+
+        age = document.getElementById("age").value;
+        votable = age < 18 ? "Too young" : "Old Enough";
+        document.getElementById("demo").innerHTML = voteable + " to vote.";
       }
     </script>
   </body>
