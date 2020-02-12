@@ -6,12 +6,14 @@
     <p id="demo"></p>
 
     <script>
-      var txt = "Javascript";
-      var x;
+      var text = "";
+      var i;
 
-      for (x of txt) {
-        document.write(x + "<br>");
+      for (i = 0; i < 5; i++) {
+        text += "The number is " + i + "<br>";
       }
+
+      document.getElementById("demo").innerHTML = text;
     </script>
   </body>
 </html>
