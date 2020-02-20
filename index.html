@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h1>Javascript While Loop!</h1>
+    <h1>Javascript Light-Bulb</h1>
 
-    <p id="demo"></p>
+    <button
+      onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'"
+    >
+      Turn on the light
+    </button>
 
-    <script>
-      var text = "";
-      var i = 0;
+    <img
+      src="https://www.w3schools.com/js/pic_bulboff.gif"
+      id="myImage"
+      style="width: 100px;"
+    />
 
-      while (i < 25) {
-        text += "<br>The number is " + i;
-        i++;
-      }
-
-      document.getElementById("demo").innerHTML = text;
-    </script>
+    <button
+      onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'"
+    >
+      Turn off the light
+    </button>
   </body>
 </html>
