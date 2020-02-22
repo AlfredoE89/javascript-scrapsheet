@@ -1,24 +1,37 @@
 <!DOCTYPE html>
-<html>
+<body lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Javascript</title>
+
+    <!--main-->
+  </head>
+  <style>
+    button {
+      margin-left: 20em;
+      margin-top: 50vh;
+    }
+  </style>
   <body>
-    <h1>Javascript Light-Bulb</h1>
+    <button>Click Me!</button>
 
-    <button
-      onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'"
-    >
-      Turn on the light
-    </button>
+    <!--jQuery-->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script>
+      //Choose a random color
+      var button = document.querySelector("button");
+      var body = document.querySelector("body");
+      var colors = ["red", "green", "yellow", "pink", "purple"];
 
-    <img
-      src="https://www.w3schools.com/js/pic_bulboff.gif"
-      id="myImage"
-      style="width: 100px;"
-    />
+      body.style.backgroundColor = "Orange";
+      button.addEventListener("click", changeBackground);
 
-    <button
-      onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'"
-    >
-      Turn off the light
-    </button>
+      function changeBackground() {
+        var colorIndex = parseInt(Math.random() * colors.length + 1);
+        body.style.backgroundColor = colors[colorIndex];
+      }
+    </script>
   </body>
-</html>
+</body>
