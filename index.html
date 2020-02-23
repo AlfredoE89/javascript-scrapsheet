@@ -4,34 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
     <title>Javascript</title>
 
     <!--main-->
   </head>
-  <style>
-    button {
-      margin-left: 20em;
-      margin-top: 50vh;
-    }
-  </style>
+  <style></style>
   <body>
-    <button>Click Me!</button>
+    <div class="header">
+      <h1>Learning Javascript</h1>
+      <p>With Alfredo Esquivel</p>
+    </div>
 
-    <!--jQuery-->
-    <script src="./js/jquery-3.4.1.min.js"></script>
-    <script>
-      //Choose a random color
-      var button = document.querySelector("button");
-      var body = document.querySelector("body");
-      var colors = ["red", "green", "yellow", "pink", "purple"];
+    <div class="container"></div>
 
-      body.style.backgroundColor = "Orange";
-      button.addEventListener("click", changeBackground);
-
-      function changeBackground() {
-        var colorIndex = parseInt(Math.random() * colors.length + 1);
-        body.style.backgroundColor = colors[colorIndex];
-      }
-    </script>
+    <script></script>
   </body>
 </body>
