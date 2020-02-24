@@ -18,6 +18,27 @@
 
     <div class="container"></div>
 
-    <script></script>
+    <script>
+      function Fruit(name, color, shape) {
+        this.name = name;
+        this.color = color;
+        this.shape = shape;
+
+        this.desrcibe = function() {
+          return (
+            "The " +
+            this.name +
+            " is the color " +
+            this.color +
+            " and the shape is " +
+            this.shape
+          );
+        };
+      }
+
+      var melon = new Fruit("melon", "green", "round");
+
+      console.log(melon.desrcibe());
+    </script>
   </body>
 </body>
