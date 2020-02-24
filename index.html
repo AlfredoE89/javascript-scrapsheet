@@ -10,35 +10,29 @@
     <!--main-->
   </head>
   <style></style>
-  <body>
+  <body onload="showDate()">
     <div class="header">
-      <h1>Learning Javascript</h1>
+      <h1 id="heading">Learning Javascript</h1>
       <p>With Alfredo Esquivel</p>
     </div>
 
-    <div class="container"></div>
+    <div class="container">
+      <button onmouseout="clearDate()" onmouseover="showDate()">
+        Show Date!
+      </button>
+      <h1 id="time"></h1>
+    </div>
 
     <script>
-      function Fruit(name, color, shape) {
-        this.name = name;
-        this.color = color;
-        this.shape = shape;
-
-        this.desrcibe = function() {
-          return (
-            "The " +
-            this.name +
-            " is the color " +
-            this.color +
-            " and the shape is " +
-            this.shape
-          );
-        };
+      function showDate() {
+        var time = document.getElementById("time");
+        time.innerHTML = Date();
       }
 
-      var melon = new Fruit("melon", "green", "round");
-
-      console.log(melon.desrcibe());
+      function clearDate() {
+        var time = document.getElementById("time");
+        time.innerHTML = "";
+      }
     </script>
   </body>
 </body>
