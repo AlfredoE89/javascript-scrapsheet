@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<body lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Javascript</title>
+
+    <!--main-->
+  </head>
+  <style></style>
+  <body>
+    <div>
+      <h1>Learning Javascript Arrow Function</h1>
+      <p>With Alfredo Esquivel</p>
+    </div>
+
+    <button id="btn">Click Me!</button>
+    <p id="demo"></p>
+
+    <script>
+      var hello;
+
+      hello = function() {
+        document.getElementById("demo").innerHTML += this;
+      };
+
+      window.addEventListener("load", hello);
+
+      document.getElementById("btn").addEventListener("click", hello);
+
+      /*
+      var hello;
+
+      hello = val => "Hello " + val;
+
+      document.getElementById("demo").innerHTML = hello("Las Vegas!");
+        var hello;
+
+      hello = () => "Hello World! Welcome To Las Vegas!";
+
+      document.getElementById("demo").innerHTML = hello();
+
+      var hello;
+
+      hello = () => {
+        return "Hello World!";
+      };
+
+      document.getElementById("demo").innerHTML = hello();
+    
+
+        var hello;
+
+      hello = function() {
+        return "Hello World!";
+      };
+      
+
+      document.getElementById("demo").innerHTML = hello();
+      */
+    </script>
+  </body>
+</body>
