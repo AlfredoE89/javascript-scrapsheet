@@ -9,7 +9,6 @@
 
     <!--main-->
   </head>
-  <style></style>
   <body>
     <div>
       <h1>Learning Javascript Classes</h1>
@@ -17,8 +16,33 @@
     </div>
 
     <p id="demo"></p>
-    <button onclick="this.style.display = 'none'">Click to remove me!</button>
 
-    <script></script>
+    <script>
+      class Car {
+        constructor(brand) {
+          this.carname = brand;
+        }
+        present(x) {
+          return x + ", I have a " + this.carname;
+        }
+      }
+
+      myCar = new Car("Chevy");
+
+      document.getElementById("demo").innerHTML = myCar.present("Hello");
+      /*class car {
+        constructor(brand) {
+          this.carname = brand;
+        }
+        present() {
+          return "I have a " + this.carname + " parked in my garage!";
+        }
+      }
+
+      mycar = new car("Ford");
+
+      document.getElementById("demo").innerHTML = mycar.present();
+      */
+    </script>
   </body>
 </body>
