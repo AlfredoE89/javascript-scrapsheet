@@ -18,6 +18,29 @@
     <p id="demo"></p>
 
     <script>
+      var x = 5 * 10;
+      debugger;
+      document.getElementById("demo").innerHTML = x;
+      /*a = 5;
+      b = 6;
+      c = a + b;
+
+      console.log(c);
+      class Car {
+        constructor(brand) {
+          this.carname = brand;
+        }
+        get cnam() {
+          return this.carname;
+        }
+        set cnam(x) {
+          this.carname = x;
+        }
+      }
+
+      mycar = new Car("Chevy");
+
+      document.getElementById("demo").innerHTML = mycar.cnam;
       class Car {
         constructor(brand) {
           this.carname = brand;
@@ -30,7 +53,7 @@
       myCar = new Car("Chevy");
 
       document.getElementById("demo").innerHTML = myCar.present("Hello");
-      /*class car {
+      class car {
         constructor(brand) {
           this.carname = brand;
         }
