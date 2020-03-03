@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<body lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Javascript</title>
+
+    <!--main-->
+  </head>
+  <style></style>
+  <body>
+    <div class="header">
+      <h1 id="heading">Learning Javascript</h1>
+      <p>With Alfredo Esquivel</p>
+    </div>
+
+    <div id="demo"></div>
+
+    <script>
+      var day;
+      switch (new Date().getDay()) {
+        case 0:
+          day = "Sunday";
+          break;
+        case 1:
+          day = "Monday";
+          break;
+        case 2:
+          day = "Tuesday";
+          break;
+        case 3:
+          day = "Wedensday";
+          break;
+        case 4:
+          day = "Thursday";
+          break;
+        case 5:
+          day = "Friday";
+          break;
+        case 6:
+          day = "Saturday";
+          break;
+        default:
+          day = "unknown";
+      }
+
+      document.getElementById("demo").innerHTML = "Today is " + day;
+      /*
+      var x1 = {};
+      var x2 = "";
+      var x3 = 0;
+      var x4 = false;
+      var x5 = [];
+      var x6 = /()/;
+      var x7 = function() {};
+
+      document.getElementById("demo").innerHTML =
+        "x1: " +
+        typeof x1 +
+        "<br>" +
+        "x2: " +
+        typeof x2 +
+        "<br>" +
+        "x3: " +
+        typeof x3 +
+        "<br>" +
+        "x4: " +
+        typeof x4 +
+        "<br>" +
+        "x5: " +
+        typeof x5 +
+        "<br>" +
+        "x6: " +
+        typeof x6 +
+        "<br>" +
+        "x7: " +
+        typeof x7 +
+        "<br>";
+        */
+    </script>
+  </body>
+</body>
