@@ -16,9 +16,30 @@
       <p>With Alfredo Esquivel</p>
     </div>
 
+    <button onclick="myFunction()">Try It</button>
+
     <div id="demo"></div>
 
     <script>
+      function myFunction() {
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        var x = (document.getElementById("demo").innerHTML = Array.isArray(
+          fruits
+        ));
+      }
+      /*
+      function myFunction() {
+        var str = "     Hello World     ";
+        alert(str.trim());
+      }
+    
+      function myFunction() {
+        var fruits = ["Banana", "Apple", "Mango"];
+        var x = (document.getElementById("demo").innerHTML = Array.isArray(
+          fruits
+        ));
+      }
+      
       var day;
       switch (new Date().getDay()) {
         case 0:
@@ -47,7 +68,7 @@
       }
 
       document.getElementById("demo").innerHTML = "Today is " + day;
-      /*
+      
       var x1 = {};
       var x2 = "";
       var x3 = 0;
