@@ -15,6 +15,15 @@
       <p>With Alfredo Esquivel</p>
     </div>
 
+    <p>Creating a Javascript Object</p>
+    <p id="demo"></p>
+
+    <p>Enter a number & click ok!</p>
+    <input id="id1" type="number" min="10" max="100" required />
+    <button onclick="myFunction()">OK</button>
+
+    <p id="demo"></p>
+
     <form
       name="myForm"
       action="/action_page.php"
@@ -26,6 +35,25 @@
     </form>
 
     <script>
+      var person = {
+        firstName: "Alfredo",
+        lastName: "Esquivel",
+        age: 30,
+        eyeColor: "brown"
+      };
+
+      document.getElementById("demo").innerHTML =
+        person.firstName + " is " + person.age + " years old!";
+
+      function myFunction() {
+        var inpObj = document.getElementById("id1");
+        if (!inpObj.checkValidity()) {
+          document.getElementById("demo").innerHTML = inpObj.validationMessage;
+        } else {
+          document.getElementById("demo").innerHTML = "Input OK";
+        }
+      }
+
       function validateForm() {
         var x = document.forms["myForm"]["fname"].value;
         if (x == "") {
