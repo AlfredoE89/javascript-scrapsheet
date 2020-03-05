@@ -9,13 +9,107 @@
 
     <!--main-->
   </head>
-  <style></style>
   <body>
     <div class="header">
       <h1 id="heading">Learning Javascript</h1>
       <p>With Alfredo Esquivel</p>
     </div>
 
-    <script></script>
+    <p id="demo"></p>
+
+    <script>
+      var person = { name: "jon", age: 30, city: "Chicago" };
+
+      var myString = JSON.stringify(person);
+      document.getElementById("demo").innerHTML = myString;
+      /*
+      var person = { name: "alfredo", age: 30, city: "Chicago" };
+
+      var myArray = Object.values(person);
+      document.getElementById("demo").innerHTML = myArray;
+
+      // CREATED OBJECT // DISPLAYED in a LOOP
+      
+      var x,
+        txt = "";
+      var person = { name: "Jon", age: 30, city: "Chicago" };
+
+      for (x in person) {
+        txt += person[x] + " ";
+      }
+
+      document.getElementById("demo").innerHTML = txt;
+      
+      // CREATED OBJECT // DISPLAYED STRING
+      var person = {
+        name: "Dave",
+        age: 30,
+        city: "New York"
+      };
+
+      document.getElementById("demo").innerHTML =
+        person.name + "," + person.age + "," + person.city;
+      
+      var person = {
+        name: "Alfredo",
+        age: 30,
+        city: "Chicago"
+      };
+
+      document.getElementById("demo").innerHTML = person;
+      
+      var person = {
+        firstName: "Alfredo",
+        lastName: "Esquivel",
+        id: 5566
+      };
+      person.name = function() {
+        return this.firstName + " " + this.lastName;
+      };
+
+      document.getElementById("demo").innerHTML =
+        "My father is " + person.name();
+      
+      var person = {
+        firstName: "Alfredo",
+        lastName: "Esquivel",
+        id: 5566,
+        fullName: function() {
+          return this.firstName + " " + this.lastName;
+        }
+      };
+
+      //DISPLAY DATA FROM THE OBJECT
+      document.getElementById("demo").innerHTML = person.fullName();
+      
+      var x;
+      for (x in person) {
+        txt += person[x] + " ";
+      }
+      console.log(txt);
+    
+      var person = {
+        firstName: "Alfredo",
+        lastName: "Esquivel",
+        age: 30,
+        eyeColor: "brown"
+      };
+
+      document.getElementById("demo").innerHTML =
+        person["firstName"] + " is " + person["age"] + " years old!";
+       var person = {
+        firstName: "Alfredo",
+        lastName: "Esquivel",
+        age: 30,
+        eyeColor: "brown"
+      };
+
+      var x = person;
+      x.age = 10;
+
+      document.getElementById("demo").innerHTML =
+        person.firstName + " is " + person.age + " years old!";
+        */
+    </script>
   </body>
 </body>
