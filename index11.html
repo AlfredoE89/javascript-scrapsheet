@@ -18,11 +18,28 @@
     <p id="demo"></p>
 
     <script>
+      function Person(first, last, age, eye) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+      }
+
+      var myFather = new Person("Jimmy", "Dean", 49, "green");
+      var myMother = new Person("Sally", "Sue", 70, "blue");
+
+      document.getElementById("demo").innerHTML =
+        "My father's name is " +
+        myFather.firstName +
+        ". My mother's name is " +
+        myMother.firstName +
+        ".";
+      /*
       var person = { name: "jon", age: 30, city: "Chicago" };
 
       var myString = JSON.stringify(person);
       document.getElementById("demo").innerHTML = myString;
-      /*
+    
       var person = { name: "alfredo", age: 30, city: "Chicago" };
 
       var myArray = Object.values(person);
