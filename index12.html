@@ -14,10 +14,37 @@
       <h1>Learning Javascript Functions</h1>
       <p>With Alfredo Esquivel</p>
     </div>
-
-    <p id="demo"></p>
+    <button type="button" onclick="myFunction()">Click Me!</button>
+    <p id="demo">0</p>
 
     <script>
+      var add = (function() {
+        var counter = 0;
+        return function() {
+          counter += 1;
+          return counter;
+        };
+      })();
+
+      function myFunction() {
+        document.getElementById("demo").innerHTML = add();
+      }
+      /*
+      function add() {
+        var counter = 0;
+        counter += 1;
+        return counter;
+      }
+
+      function myFunction() {
+        document.getElementById("demo").innerHTML = add();
+      }
+      
+      var a = 4;
+      function myFunction() {
+        document.getElementById("demo").innerHTML = a * a;
+      }
+      
       var person = {
         fullname: function() {
           return this.firstName + " " + this.lastName;
@@ -29,7 +56,7 @@
       };
       var x = person.fullname.apply(person1);
       document.getElementById("demo").innerHTML = x;
-      /*
+      
       var person = {
         fullName: function(city, country) {
           return (
