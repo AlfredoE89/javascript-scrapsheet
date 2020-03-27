@@ -13,18 +13,20 @@
   <body>
     <h1>Javascript DOM</h1>
 
-    <p>exaples 1</p>
-    <p>exaples 2</p>
-    <p>exaples 3</p>
-    <p>exaples 4</p>
+    <p id="p1">Hello World!</p>
 
-    <p id="demo"></p>
+    <p>The words up top were changed with script</p>
 
     <script>
+      /*
+      document.getElementById("p1").style.color = "blue";
+      document.getElementById("p1").style.fontFamily = "Tahoma";
+      document.getElementById("p1").style.fontSize = "small";
+    
       var x = document.getElementsByTagName("p");
       document.getElementById("demo").innerHTML =
         "The text in the first paragraph (index 0) is: " + x[4].innerHTML;
-      /*
+     
       var myElement = document.getElementById("intro");
       document.getElementById("demo").innerHTML =
         "The text from the intro paragraph is " + myElement.innerHTML;
