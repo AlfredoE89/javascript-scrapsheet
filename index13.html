@@ -9,16 +9,60 @@
 
     <!--main-->
   </head>
-
+  <style></style>
   <body>
     <h1>Javascript DOM</h1>
 
-    <p id="p1">Hello World!</p>
-
-    <p>The words up top were changed with script</p>
-
+    <div
+      onmouseover="mOver(this)"
+      onmouseout="mOut(this)"
+      style="background-color: #d9d9d9;"
+    >
+      Hover Over Me!
+    </div>
     <script>
+      function mOver(obj) {
+        obj.innerHTML = "Thank You";
+      }
+
+      function mOut(obj) {
+        obj.innerHTML = "Mouse Over Me";
+      }
       /*
+      function myFunction() {
+        var x = document.getElementById("fname");
+        x.value = x.value.toUpperCase();
+      }
+      
+      document.getElementById("myBtn").onclick = displayDate;
+
+      function displayDate() {
+        document.getElementById("demo").innerHTML = Date();
+      }
+    
+      function displayDate() {
+        document.getElementById("demo").innerHTML = Date();
+      }
+      
+      function changeText(id) {
+        id.innerHTML = "FUCK OFF!";
+      }
+      
+      function myMove() {
+        var elem = document.getElementById("animate");
+        var pos = 0;
+        var id = setInterval(frame, 5);
+        function frame() {
+          if (pos == 350) {
+            clearInterval(id);
+          } else {
+            pos++;
+            elem.style.top = pos + "px";
+            elem.style.left = pos + "px";
+          }
+        }
+      }
+      
       document.getElementById("p1").style.color = "blue";
       document.getElementById("p1").style.fontFamily = "Tahoma";
       document.getElementById("p1").style.fontSize = "small";
